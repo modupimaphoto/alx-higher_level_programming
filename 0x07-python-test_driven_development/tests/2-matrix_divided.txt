@@ -1,0 +1,20 @@
+
+'2-matrix_divided' module
+=============================
+
+Unit test for the function  '2-matrix_divided'  divides all elements of a matrix.
+---------------------
+
+Import the function:
+
+	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Now test it:
+
+	>>> matrix = [[1, 2, 3],[4, 5, 6]]
+
+	>>> matrix = [[3, 6, 12], [8, 6, 3]]
+	
+	>>> matrix = [[1.5, 2.5, 3.5], [4.5, 5.5, 6.5], [7.5, 8.5, 9.5]]
+
+	>>> matrix = [[1, 2, 3], [4, 5], [6, 7, 8]]
