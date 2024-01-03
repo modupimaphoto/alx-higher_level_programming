@@ -1,0 +1,15 @@
+
+'5-text_indentation' module
+=============================
+
+Uit test for the function  '5-text_indentation' prints a text with 2 new
+lines after each of these characters: ., ? and :
+---------------------
+
+Import the function:
+
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Now test it:
+
+	>>> text = "Hello. How are you? I hope all is well."
