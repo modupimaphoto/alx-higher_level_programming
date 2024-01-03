@@ -1,0 +1,36 @@
+
+'4-print_square' module
+=============================
+
+Unit test for the function  '4-print_square' prints a square with the character #.
+---------------------
+
+Import the function:
+
+	>>> print_square = __import__('4-print_square').print_square
+
+Now test it:
+
+	>>> print_square(4)
+	####
+	####
+	####
+	####
+
+	>>> print_square(10)
+	##########
+	##########
+	##########
+	##########
+	##########
+	##########
+	##########
+	##########
+	##########
+	##########
+
+	>>> print_square(0)
+	
+
+	>>> print_square(1)
+	#
