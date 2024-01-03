@@ -2,11 +2,10 @@
 
 def say_my_name(first_name, last_name=""):
 
-    if isinstance(first_name, str) is False:
+    if not isinstance(first_name, str):
         raise TypeError("first_name must be a string")
-    if isinstance(last_name, str) is False:
+
+    if not isinstance(last_name, str):
         raise TypeError("last_name must be a string")
 
-    fullname = "My name is {} {}"
-
-    print(fullname.format(first_name, last_name))
+    print("My name is {} {}".format(first_name, last_name))
