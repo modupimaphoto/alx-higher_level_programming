@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-
 """
     The '0-add_integer' returns the sum oof two numbers
     a: The first parameter.
     b: The second parameter.
 """
+
+
 def add_integer(a, b=98):
     """
         Works with numbers - int
