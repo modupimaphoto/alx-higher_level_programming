@@ -66,7 +66,7 @@ class Rectangle:
         while (i < self.__height):
             record_str += ("#" * self.__width) + "\n"
             i += 1
-        return record_str
+        return record_str[:-1]
 
     def __repr__(self):
         """return a string representation of the rectangle"""
