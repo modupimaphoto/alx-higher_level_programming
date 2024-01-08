@@ -10,7 +10,7 @@ A subclass is a class that inherits attributes and methods from a superclass or 
 
 ### 3. How to list all attributes and methods of a class or instance:
 
-You can use the dir() function to get a list of attributes and methods of a class or instance.
+You can use the `dir()` function to get a list of attributes and methods of a class or instance.
 
 ### 4. When can an instance have new attributes:
 
