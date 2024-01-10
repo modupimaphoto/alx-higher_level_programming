@@ -112,9 +112,13 @@ class Rectangle(Base):
         height = self.__height
         return rep.format(id, x, y, width, height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Update the class Rectangle"""
 
+        if len(args) == 0:
+            for key, value in kwargs.items():
+                self.__setattr__(key, value)
+            return
         try:
             self.id = args[0]
             self.__width = args[1]
