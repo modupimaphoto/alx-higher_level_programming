@@ -25,5 +25,20 @@ class Square(Rectangle):
 
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
-        self.__width = value
-        self.__height = value
+        self.width = value
+        self.height = value
+
+    def update(self, *args, **kwargs):
+        """Update the class Square"""
+
+        if len(args) == 0:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+        else:
+            try:
+                self.id = args[0]
+                self.size = args[1]
+                self.x = args[2]
+                self.y = args[3]
+            except IndexError:
+                pass
