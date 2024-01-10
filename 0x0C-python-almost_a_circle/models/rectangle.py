@@ -98,3 +98,12 @@ class Rectangle(Base):
         with the character #"""
         for i in range(self.__height):
             print("#" * self.__width)
+
+    def __str__(self):
+        rep = "[Rectangle] ({}) {}/{} - {}/{}"
+        id = self.id
+        x = self.__x
+        y = self.__y
+        width = self.__width
+        height = self.__height
+        return rep.format(id, x, y, width, height)
