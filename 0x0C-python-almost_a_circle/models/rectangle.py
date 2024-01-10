@@ -103,6 +103,7 @@ class Rectangle(Base):
         print(rect, end="")
 
     def __str__(self):
+        """string representation"""
         rep = "[Rectangle] ({}) {}/{} - {}/{}"
         id = self.id
         x = self.__x
@@ -110,3 +111,15 @@ class Rectangle(Base):
         width = self.__width
         height = self.__height
         return rep.format(id, x, y, width, height)
+
+    def update(self, *args):
+        """Update the class Rectangle"""
+
+        try:
+            self.id = args[0]
+            self.__width = args[1]
+            self.__height = args[2]
+            self.__x = args[3]
+            self.__y = args[4]
+        except IndexError:
+            pass
