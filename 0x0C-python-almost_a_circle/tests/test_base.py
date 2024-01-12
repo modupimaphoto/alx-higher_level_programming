@@ -5,19 +5,17 @@ from models.base import Base
 
 
 class TestBaseModule(unittest.TestCase):
-    
-    def test_nb_objects(self):
-        if __name__ == "__main__":
-            b1 = Base()
-            self.assertEqual(1, b1.id)
-            b2 = Base()
-            self.assertEqual(2, b2.id)
-            b3 = Base()
-            self.assertEqual(3, b3.id)
-            b4 = Base(12)
-            self.assertEqual(12, b4.id)
-            b5 = Base()
-            self.assertEqual(4, b5.id)
+
+    def test_initialization(self):
+        base1 = Base()
+        base2 = Base()
+        self.assertEqual(1, base1.id)
+        self.assertEqual(2, base2.id)
+
+    def test_id(self):
+        base = Base(100)
+        self.assertEqual(100, base.id)
+
 
 if __name__ == '__main__':
     unittest.main()
