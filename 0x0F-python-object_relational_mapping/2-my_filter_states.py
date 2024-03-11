@@ -17,6 +17,7 @@ if __name__ == '__main__':
     db = sys.argv[3]
     port = 3306
 
+    db = MySQLdb.connect(host, user, password, db, port)
     c = db.cursor()
     sql = "SELECT * FROM states WHERE name LIKE BINARY '{}'"
     c.execute(sql.format(sys.argv[4]))
