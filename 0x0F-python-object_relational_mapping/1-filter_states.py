@@ -7,6 +7,7 @@ from the database hbtn_0e_0_usa:
 import sys
 import MySQLdb
 
+
 if __name__ == '__main__':
 
     host = 'localhost'
@@ -19,7 +20,7 @@ if __name__ == '__main__':
     c = db.cursor()
     sql = """SELECT * FROM states WHERE name
     LIKE BINARY 'N%' ORDER BY states.id"""
-    c.execute()
+    c.execute(sql)
     rows = c.fetchall()
 
     for row in rows:
