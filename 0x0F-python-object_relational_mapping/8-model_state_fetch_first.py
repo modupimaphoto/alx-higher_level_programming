@@ -25,6 +25,6 @@ if __name__ == '__main__':
     result = session.query(State).first()
 
     if result is None:
-        print('Nothin')
+        print('Nothing')
     else:
         print(result.id, result.name, sep=': ')
