@@ -10,7 +10,7 @@ import sys
 import MySQLdb
 
 
-if __name__ == '__name__':
+if __name__ == '__main__':
 
     host = 'localhost'
     user = sys.argv[1]
